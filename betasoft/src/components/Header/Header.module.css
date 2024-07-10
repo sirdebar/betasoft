@@ -1,0 +1,40 @@
+.header__wrapper {
+    width: 100%;
+    background-color: black;
+    max-height: 89px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    box-shadow: 0 4px 6px -1px rgba(42, 14, 97, 0.5);
+    background-color: rgba(3, 0, 20, 0.091);
+    backdrop-filter: blur(10px);
+    z-index: 50;
+}
+
+.header__logo img {
+    max-width: 300px;
+}
+
+.header__button h2 {
+    color: #aaa;
+}
+
+@media (max-width: 800px) {
+    .header__wrapper {
+        align-items: center;
+        padding: 10px; /* Уменьшаем padding для хедера на малых экранах */
+    }
+
+    .header__logo img {
+        max-width: 200px;
+    }
+
+    .header__button h2 {
+        font-size: 1em; /* Уменьшаем размер текста кнопки */
+        margin: 0; /* Убираем внешние отступы */
+    }
+}
